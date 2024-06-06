@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PrincipalController@principal')->name('site.index');
-
 Route::get('/login','LoginController@login')->name('site.login');
-
-Route::get('/meusdados','MeusDadosController@meusdados')->name('site.meusdados');
+Route::get('/meus-dados','MeusDadosController@meusDados')->name('site.meus-dados');
+Route::get('/novo-usuario','NovoUsuarioController@novoUsuario')->name('site.novo-usuario');
+Route::get('/novo-jogo','NovoJogoController@novoJogo')->name('site.novo-jogo');
+Route::get('/jogo-info','JogoInfoController@jogoInfo')->name('site.jogo-info');
 
 
 Route::fallback(function () {
-    echo 'A rota acessada não existe. <a href="' . route('site.index') . '">Clique aqui</a> para ir para a página inicial.';
+    echo 'A rota acessada não existe';
 });

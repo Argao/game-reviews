@@ -27,5 +27,4 @@
             </tr>
         </table>
     </main>
-    @include('site.layouts._partials.rodape')
 @endsection

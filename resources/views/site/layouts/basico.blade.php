@@ -9,5 +9,6 @@
     </head>
     <body>
         @yield('conteudo')
+        @include('site.layouts._partials.rodape')
     </body>
 </html>
